@@ -13,9 +13,7 @@ public class ConfiguracionCors implements WebMvcConfigurer {
         registry.addMapping("/**")
             .allowedOrigins(
                 "http://localhost:5173")
-//                "https://clubcoloncorrientes.com.ar", 
-//                "https://www.clubcoloncorrientes.com.ar", 
-//                "www.clubcoloncorrientes.com.ar")
+
             .allowedMethods("GET", "POST", "PUT", "DELETE", "PATCH")
             .allowCredentials(true);
     }
