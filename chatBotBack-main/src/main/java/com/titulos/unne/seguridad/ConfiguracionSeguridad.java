@@ -44,8 +44,7 @@ public class ConfiguracionSeguridad extends WebSecurityConfigurerAdapter {
             .authorizeRequests()
             .anyRequest().permitAll()
                 .and()
-                .csrf().disable()
-                .addFilterBefore(jwtTokenFilter, UsernamePasswordAuthenticationFilter.class);
+                .csrf().disable();
     }
     
     
